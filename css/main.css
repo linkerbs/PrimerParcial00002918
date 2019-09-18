@@ -2,14 +2,19 @@
 
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
-*, ::before, ::after {
+
+*,
+ ::before,
+ ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: calc(0.5em + 1vh);
 }
 
+
 /* El estilo base para moviles */
+
 body {
     background-color: #112935;
     color: white;
@@ -31,9 +36,12 @@ body {
     display: none;
 }
 
-p{
+
+/* Se redujo un poco el padding*/
+
+p {
     font-size: 0.75em;
-    padding: 1rem;
+    padding: 0.5rem;
     line-height: 25px;
 }
 
@@ -49,17 +57,18 @@ p{
     top: 30%;
     right: 95%;
     font-size: 1.5rem;
-
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-
 }
+
 .options i:last-child {
     font-size: 1.6rem;
 }
 
+
 /* Big area */
+
 .big-hero img {
     width: 150px;
 }
@@ -68,42 +77,61 @@ p{
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
-    margin-top: 1em ;
+    margin-top: 1em;
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    font-size: 0.7em;
+    ;
     color: #D7DEE6;
-
 }
+
+.big-hero a {
+    color: #0AC693;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
 
 /* Social links*/
-.social-links{
+
+
+/* Se cambio el margin-top para que quedara mas unido, y el margin se redujo */
+
+.social-links {
     list-style: none;
     padding: 0;
-    margin-top: 3em;
+    margin-top: none;
     display: flex;
     flex-direction: row;
-    justify-content: center
-
+    justify-content: center;
+    margin-bottom: -5.5em;
 }
 
-.social-links li a{
+
+/*Se cambio el tamaño de la fuente y se definieron los margenes laterales*/
+
+.social-links li a {
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 5.5em;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
-
 
 .green-area {
-    background-color: #0AC693; 
+    background-color: #0AC693;
 }
-
 
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -129,7 +157,7 @@ p{
     padding-bottom: 2em;
 }
 
-.post article img{
+.post article img {
     height: 150px;
     width: 100%;
     object-fit: cover;
@@ -146,15 +174,16 @@ p{
 }
 
 .post article p {
-    color:#112935;
+    color: #112935;
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
 
+
 /* About */
 
-.about{
+.about {
     margin-top: 2em;
 }
 
@@ -165,11 +194,11 @@ p{
     margin: 2em;
 }
 
-.bio-info img{
-   width: 200px;
+.bio-info img {
+    width: 200px;
 }
 
-.bio-info p{
+.bio-info p {
     font-size: 16px;
     padding: 2em;
     text-align: left;
@@ -184,7 +213,7 @@ p{
     padding: 0px 1em;
 }
 
-.contact * + * {
+.contact *+* {
     margin-top: 1.5em;
 }
 
@@ -193,7 +222,8 @@ p{
     flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input,
+.contact-form textarea {
     padding: 1rem 2rem;
     border: none;
     border-radius: 0px 2em;
@@ -201,17 +231,26 @@ p{
     width: 100%;
 }
 
+
 /* Decorando placeholder */
 
-::-webkit-input-placeholder { 
-    color: #D7DEE6; 
-} 
- 
-:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
- 
-::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
- 
-:-ms-input-placeholder { color: #D7DEE6; }
+::-webkit-input-placeholder {
+    color: #D7DEE6;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #D7DEE6;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #D7DEE6;
+}
+
+:-ms-input-placeholder {
+    color: #D7DEE6;
+}
 
 .contact-form input[type=submit] {
     background-color: #F74442;
@@ -220,13 +259,13 @@ p{
     font-size: 1rem;
 }
 
-.black-decoration{
+.black-decoration {
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
-footer{
+footer {
     background-color: #0D5061;
-    color:#D7DEE6;
+    color: #D7DEE6;
 }
 
 footer .social-links {
@@ -248,6 +287,7 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+
 .menu li {
     display: block;
     padding: 0.5em;
@@ -257,66 +297,59 @@ footer .social-links {
 .menu li a {
     color: white;
     text-decoration: none;
-    
 }
 
+
+/* Uso de la propiedad hover para cambiar el color cuando se pase sobre el elemento */
+
+.menu li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
 /* Pesonalizando estilo para tablets*/
+
 @media only screen and (min-width: 768px) {
-  
     .post ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
-
-
     .logo {
         width: 150px;
         margin: 1.5em;
     }
-
     .show-desktop {
         display: block;
     }
-
     .hide-desktop {
         display: none;
     }
-
     .menu {
-        background-color: #112935; 
+        background-color: #112935;
         position: static;
         z-index: 20;
         width: auto;
-        height:auto;
+        height: auto;
         display: flex;
         margin-top: 1em;
     }
-
-
-
-
     /*TODO: FALTA CSS */
-} 
+}
 
 @media only screen and (min-width: 1024px) {
-
-       /*TODO: FALTA CSS */
-
-
-
+    /*TODO: FALTA CSS */
 }
 
 @media only screen and (min-width: 1440px) {
-
     /*TODO: FALTA CSS */
     .container {
         width: 80%;
