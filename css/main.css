@@ -80,8 +80,11 @@ p {
     margin-top: 1em;
 }
 
+
+/* Se agrando un poco la fuente para concordar*/
+
 .big-hero p {
-    font-size: 0.7em;
+    font-size: 0.9em;
     ;
     color: #D7DEE6;
 }
@@ -105,7 +108,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: -5.5em;
+    margin-bottom: -1.5em;
 }
 
 
@@ -114,7 +117,7 @@ p {
 .social-links li a {
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 5.5em;
+    font-size: 6.5em;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -143,11 +146,19 @@ p {
     list-style: none;
 }
 
+
+/* Se define el flexbox y se centra el contenido*/
+
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
+    display: flex;
+    justify-content: center;
 }
+
+
+/* Se cambio el ancho del articulo para adaptarse a la resoluscion y dejar el espacio en los borders*/
 
 .post ul li article {
     overflow: hidden;
@@ -155,6 +166,7 @@ p {
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    width: 80%;
 }
 
 .post article img {
@@ -185,6 +197,9 @@ p {
 
 .about {
     margin-top: 2em;
+    margin-bottom: 3em;
+    /*display: flex;
+    flex-flow: column wrap;*/
 }
 
 .about h2 {
@@ -194,33 +209,47 @@ p {
     margin: 2em;
 }
 
-.bio-info img {
-    width: 200px;
+.bio-info {
+    /*width: 50%;
+    float: left;*/
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    justify-content: center;
 }
 
+.bio-info img {
+    /*se cambio a porcentaje la imagen para que se adaptara mejor*/
+    width: 55%;
+}
+
+
+/* se cambio el letter-spacin para que estuviera mas junto*/
+
 .bio-info p {
-    font-size: 16px;
+    font-size: 1em;
     padding: 2em;
     text-align: left;
     line-height: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 0;
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
     text-align: left;
     padding: 0px 1em;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* width: 50%;
+    float: right;*/
 }
 
 .contact *+* {
     margin-top: 1.5em;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
+.contact-form {}
 
 .contact-form input,
 .contact-form textarea {
@@ -305,6 +334,13 @@ footer .social-links {
 .menu li a:hover {
     color: red;
     text-decoration: none;
+}
+
+
+/* se ajusto la letra en la parte de derechos de autor*/
+
+footer p {
+    font-size: 0.6em;
 }
 
 
