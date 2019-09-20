@@ -12,6 +12,7 @@
     }
     /* El estilo base para moviles */
     
+    
     body {
         background-color: #112935;
         color: white;
@@ -177,8 +178,7 @@
     .about {
         margin-top: 2em;
         margin-bottom: 3em;
-        /*display: flex;
-flex-flow: column wrap;*/
+       
     }
     
     .about h2 {
@@ -189,8 +189,7 @@ flex-flow: column wrap;*/
     }
     
     .bio-info {
-        /*width: 50%;
-float: left;*/
+       
         display: flex;
         flex-flow: row wrap;
         width: 100%;
@@ -199,10 +198,10 @@ float: left;*/
     }
     
     .bio-info img {
-        /*se cambio a porcentaje la imagen para que se adaptara mejor*/
+        
         width: 40%;
     }
-    /* se cambio el letter-spacin para que estuviera mas junto*/
+    
     
     .bio-info p {
         font-size: 1em;
@@ -307,7 +306,7 @@ float: right;*/
     .menu li {
         display: block;
         padding: 0.5em;
-        margin-top: 5px;
+       
     }
     
     .menu li a {
@@ -335,8 +334,9 @@ float: right;*/
             justify-content: center;
         }
         .post ul li {
-            min-height: 350px;
+            min-height: 450px;
             max-height: 3500px;
+            min-width: 430px;
             margin: 1rem 2rem;
             flex: 1 0 300px;
         }
@@ -357,17 +357,53 @@ float: right;*/
             width: auto;
             height: auto;
             display: flex;
-            margin-top: 1em;
+            
         }
-        /*TODO: FALTA CSS */
+
+        header{
+          width: 100%; 
+        }
+
+        label{
+            margin-left: 3em;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin-top: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: -0.7em;
+            margin-bottom: -6em;
+        }
+
+        .bio-info img {
+            /*se cambio a porcentaje la imagen para que se adaptara mejor*/
+            width: 30%;
+        }
+
+        .bio-info p {
+            
+            text-align: center;
+            
+        }
+
+        
+
+        
+        
     }
     
     @media only screen and (min-width: 1024px) {
-        /*TODO: FALTA CSS */
+        header{
+            width: 100%; 
+          }
     }
     
     @media only screen and (min-width: 1440px) {
-        /*TODO: FALTA CSS */
+        
         .container {
             width: 80%;
             margin: 0 auto;
@@ -411,4 +447,30 @@ float: right;*/
             width: 50%;
             float: right;
         }
+
+        .post ul li {
+            
+            min-width: 350px;
+            margin: 2rem 3.2rem;
+            
+        }
+
+        .contact-form input[type=submit] {
+            width: 40%;
+        }
+
+        .about{
+            margin-top: 0;
+        }
+
+        .bio-info p {
+            
+            text-align: left;
+            
+        }
+
+        label{
+            margin-left: 0;
+        }
+        
     }
