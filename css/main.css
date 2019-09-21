@@ -10,9 +10,9 @@
         box-sizing: border-box;
         font-size: calc(0.5em + 1vh);
     }
-    /* El estilo base para moviles */
     
     
+    /* Se define la estructura general del cuerpo del html con sus colores y fuentes asi como la profunidad de la fuente*/
     body {
         background-color: #112935;
         color: white;
@@ -20,11 +20,15 @@
         text-align: center;
         font-weight: 400;
     }
+
     
+    /*Se declara el header como un flexbox en el cual los componentes se van a adecuar entre ellos*/
     .header {
         display: flex;
         justify-content: space-between
     }
+
+
     
     .src-only {
         display: none;
@@ -40,12 +44,12 @@
         padding: 0.5rem;
         line-height: 25px;
     }
-    
+    /*Se declara la altura y ancho del logo*/
     .logo {
         width: 90px;
         margin: 1em;
     }
-    
+    /* Se declara como flexbox intentando matener los elementos ne la misma linea empezando desde la izquierda ademas de darle los tamaños adecuados*/
     .options {
         color: inherit;
         text-decoration: none;
@@ -57,16 +61,16 @@
         flex-wrap: wrap;
         align-items: flex-start;
     }
-    
+    /*Se define la fuente para exactamente el ultimo elemento hijo*/
     .options i:last-child {
         font-size: 1.6rem;
     }
     /* Big area */
-    
+    /*Se declara el tamaño de la imagen del perfil*/
     .big-hero img {
         width: 150px;
     }
-    
+    /* Se declara los elemento de la fuente como el tamaño, profunidad y espaciado asi como el margin*/
     .big-hero h2 {
         font-size: 1.875em;
         font-weight: 700;
@@ -80,14 +84,14 @@
         ;
         color: #D7DEE6;
     }
-    
+    /*Se definio el color  y tamaño de la fuente*/
     .big-hero a {
         color: #0AC693;
         font-size: 4em;
         margin-bottom: 1em;
     }
     /* Social links*/
-    /* Se cambio el margin-top para que quedara mas unido, y el margin se redujo */
+    /* Se cambio el margin-top para que quedara mas unido, y el margin se redujo,ademas de declararlo como flex-blox  */
     
     .social-links {
         list-style: none;
@@ -111,16 +115,16 @@
         margin-left: 0.2em;
         margin-right: 0.2em;
     }
-    
+    /*Se define el color de fondo*/
     .green-area {
         background-color: #0AC693;
     }
-    
+    /*Se declara el padding y un margin negativo al fondo para adecuarse a lo solicitado*/
     .post {
         padding: 1em;
         margin-bottom: -2px;
     }
-    
+    /*El texto se transforma a mayusculas y se cambian las propiedades de la fuentes*/
     .post h2 {
         text-transform: uppercase;
         font-weight: 700;
@@ -150,13 +154,13 @@
         padding-bottom: 2em;
         width: 80%;
     }
-    
+    /*Se declara el alto y ancho de la imagen*/
     .post article img {
         height: 150px;
         width: 100%;
         object-fit: cover;
     }
-    
+    /*Se define el colo, margenes y padding */
     .post article h3 {
         color: #0D5061;
         margin-top: 2em;
@@ -166,7 +170,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    
+    /*Se fefine el color y fuente del parrafo*/
     .post article p {
         color: #112935;
         font-size: 0.75em;
@@ -174,20 +178,20 @@
         line-height: 25px;
     }
     /* About */
-    
+    /*Se cambiaron los margenes para concordar*/
     .about {
         margin-top: 2em;
         margin-bottom: 3em;
        
     }
-    
+    /*Se transforma a mayusucla y se define la fuente y los margenes*/
     .about h2 {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.125em;
         margin: 2em;
     }
-    
+    /* Se declara como flex-box, se alinea el texto y se centra el contenido*/
     .bio-info {
        
         display: flex;
@@ -196,13 +200,14 @@
         justify-content: center;
         text-align: center;
     }
-    
+    /*Se ad el ancho de la imagen y se ajusta el alto*/
     .bio-info img {
         
         width: 40%;
+        height: auto;
     }
     
-    
+    /*Se declarael espaciado, fuente y padding del parrafo asi como lo que cubrira*/
     .bio-info p {
         font-size: 1em;
         padding: 2em;
@@ -211,7 +216,7 @@
         letter-spacing: 0;
         width: 85%;
     }
-    
+    /*Se define como flex-box y se centra el contendio y texto*/
     .contact {
         padding: 0px 1em;
         width: 100%;
@@ -219,10 +224,9 @@
         flex-flow: row wrap;
         justify-content: center;
         text-align: center;
-        /* width: 50%;
-float: right;*/
+        
     }
-    
+    /*A los label se define su fuente, ancho ademas que se muestran en bloque para que queden encina y se pone en negrita*/
     label {
         width: 100%;
         display: block;
@@ -232,11 +236,11 @@ float: right;*/
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
     }
-    
+    /*Se define el margen*/
     .contact *+* {
         margin-top: 1.5em;
     }
-    
+    /*A las cajas de textos, se define su padding, border asi como su border-radius para que sean circulares en los bordes*/
     .contact-form input,
     .contact-form textarea {
         padding: 1rem 2rem;
@@ -266,7 +270,7 @@ float: right;*/
      :-ms-input-placeholder {
         color: #D7DEE6;
     }
-    
+    /*Al button para enviar el formulario se define su color de fondo y letra asi como su fuente*/
     .contact-form input[type=submit] {
         background-color: #F74442;
         font-weight: 400;
@@ -277,16 +281,16 @@ float: right;*/
     .black-decoration {
         background-image: url("../images/decoracion_oscura_small.svg");
     }
-    
+    /*Se definen los colores del footer*/
     footer {
         background-color: #0D5061;
         color: #D7DEE6;
     }
-    
+    /*Se define el margen de los iconos del footer*/
     footer .social-links {
         margin: 0;
     }
-    
+    /*Para el menu se indica su altura, posicion y color*/
     .menu {
         background-color: #112935;
         position: absolute;
@@ -295,14 +299,12 @@ float: right;*/
         right: 0;
         width: 100vw;
         height: calc(100vh - 60px);
-    }
-    
-    .menu {
         list-style: none;
         text-align: left;
         padding: 1em;
     }
     
+    /*Se muestran los elementos del menu en una linea y se define su padding*/
     .menu li {
         display: block;
         padding: 0.5em;
@@ -359,31 +361,28 @@ float: right;*/
             display: flex;
             
         }
-
-        header{
-          width: 100%; 
-        }
-
+      
+        
+         /*Se cambia el margen de los labels del formulario para que concuerden*/
         label{
             margin-left: 3em;
         }
-
+           /* Se definen los margenes para el espaciado*/
         .social-links {
             list-style: none;
             padding: 0;
             margin-top: none;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+            
             margin-top: -0.7em;
             margin-bottom: -6em;
         }
 
         .bio-info img {
             /*se cambio a porcentaje la imagen para que se adaptara mejor*/
-            width: 30%;
+            width: auto;
         }
-
+        /*Se alineo el texto al centro para que se viera mejor*/
         .bio-info p {
             
             text-align: center;
@@ -397,18 +396,18 @@ float: right;*/
     }
     
     @media only screen and (min-width: 1024px) {
-        header{
-            width: 100%; 
-          }
+       /*No hubo necesidad de hacer cambios en este apartado debido a que con las reglas anteriores la pagina se adaptaba perfectamente a las demas resoluciones*/
     }
     
     @media only screen and (min-width: 1440px) {
-        
+        /*Se le dio un ancho de 80% al contenedor*/
         .container {
             width: 80%;
             margin: 0 auto;
             max-width: 1440px;
         }
+
+        /*Se cambio un poco la posicion de la parte de social links para acoplarse a lo solicitado*/
         .social-links {
             list-style: none;
             padding: 0;
@@ -425,50 +424,56 @@ float: right;*/
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        /*Se definio el ancho y alto de los articulos*/
         .post ul li article {
             width: 100%;
             height: auto;
         }
+
+        /*Se definio el flexbos y se hizo que intentara tenes todo en la misma columnas*/
         .about {
             display: flex;
             flex-flow: column wrap;
         }
+
+        /*Se posiciono la informacion a la izquierda*/
         .bio-info {
             width: 50%;
             float: left;
             text-align: center;
         }
+
+        /*Se posiciono el formulario a la derecha*/
         .contact {
             text-align: left;
             padding: 0px 1em;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
+            
             width: 50%;
             float: right;
         }
-
+/*Se cambio el ancho minimo para que quedara un poco mas grande*/
         .post ul li {
             
             min-width: 350px;
             margin: 2rem 3.2rem;
             
         }
-
+/*Se cambio el ancho del button*/
         .contact-form input[type=submit] {
             width: 40%;
         }
-
+/*Se puso margin de 0 para acercar*/
         .about{
             margin-top: 0;
         }
-
+/*Se alineo el texto a la izquierda*/
         .bio-info p {
             
             text-align: left;
             
         }
-
+/*Se cambio el margin para concordar*/
         label{
             margin-left: 0;
         }
